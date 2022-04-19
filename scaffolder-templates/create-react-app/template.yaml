@@ -44,6 +44,7 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+              - dev.azure.com
   steps:
     - id: template
       name: Fetch Skeleton + Template
@@ -64,6 +65,7 @@ spec:
       input:
         allowedHosts:
           - github.com
+          - dev.azure.com
         description: This is ${{ parameters.component_id }}
         repoUrl: ${{ parameters.repoUrl }}
 
